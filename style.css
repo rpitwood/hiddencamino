@@ -1,0 +1,75 @@
+/* style.css */
+
+body {
+  font-family: 'EB Garamond', serif;
+  background-color: #fefcf6;
+  color: #2e2a26;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #d6cbbb;
+  padding: 1em;
+  text-align: center;
+  border-bottom: 2px solid #b3a89a;
+}
+
+header h1 {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header .tagline {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+.cartoon-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.cartoon-gallery img {
+  max-width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.faq dl {
+  margin-top: 1em;
+}
+
+.faq dt {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.faq dd {
+  margin-left: 1em;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  padding: 1em 0;
+  border-top: 1px solid #ccc;
+  background-color: #f0ece2;
+}
