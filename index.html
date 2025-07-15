@@ -4,78 +4,104 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hidden Camino</title>
-  <meta name="description" content="Hidden Camino uncovers the ancient, pre-Christian pilgrimage routes of the Camino de Santiago. Join a crumpled amateur archaeologist as we explore myth, history, and mystery through Galician landscapes." />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Hidden Camino blends past and present on the Camino de Santiago. Join a crumpled linguist as we explore myth, history, and modern realities across the Galician landscape." />
+
+  <!-- Fonts & favicon -->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Uncial+Antiqua&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Base stylesheet -->
   <style>
-    body {
-      font-family: 'EB Garamond', serif;
-      background-image: url('images/parchment-texture.png');
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      color: #2c1f0f;
-      padding: 1em;
-      line-height: 1.6;
+    /* -------------  Root / body  ------------- */
+    :root {
+      --parchment-bg: #f7f2e4;
+      --border: #a28b6d;
+      --ink-dark: #2c1f0f;
     }
 
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after { box-sizing: inherit; }
+
+    body {
+      margin: 0;
+      font-family: 'EB Garamond', serif;
+      color: var(--ink-dark);
+      background: var(--parchment-bg) url('images/parchment-texture.jpg') repeat;
+      line-height: 1.6;
+      padding: 1em;
+    }
+
+    /* -------------  Header  ------------- */
     header {
       text-align: center;
       font-family: 'Uncial Antiqua', cursive;
-      background-color: rgba(255, 255, 240, 0.9);
+      background: rgba(255, 255, 240, 0.9);
       padding: 1em;
       border: 2px solid #4a3728;
       margin-bottom: 2em;
     }
+    h1 { margin: 0 0 .2em; font-size: 2.5rem; }
+    .tagline { font-style: italic; font-size: 1.1rem; color: #5e422e; }
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0;
-    }
-
-    .tagline {
-      font-style: italic;
-      font-size: 1.2em;
-      color: #5e422e;
-    }
-
+    /* -------------  Main container  ------------- */
     main {
-      background-color: rgba(255, 255, 240, 0.95);
+      background: rgba(255, 255, 240, 0.95);
       padding: 2em;
-      border: 1px solid #a28b6d;
+      border: 1px solid var(--border);
       max-width: 900px;
       margin: auto;
     }
 
+    /* -------------  Typographic flair  ------------- */
     section.about p:first-letter {
       float: left;
-      font-size: 3em;
+      font-size: 3rem;
       line-height: 1;
-      padding-right: 0.1em;
+      padding-right: 0.15em;
       font-family: 'Uncial Antiqua', cursive;
       color: #6d4c3d;
     }
 
+    /* -------------  Images  ------------- */
     img {
-      border: 1px solid #a28b6d;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+      max-width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+      box-shadow: 2px 2px 6px rgba(0,0,0,.2);
     }
+    /* floated illustrative images */
+    .float-right { float: right; margin: 0 0 1em 1em; }
+    .float-left  { float: left;  margin: 0 1em 1em 0; }
 
+    /* -------------  Footer  ------------- */
     footer {
       text-align: center;
       margin-top: 3em;
       font-style: italic;
       color: #5e422e;
     }
+
+    /* -------------  Mobile tweaks  ------------- */
+    @media (max-width: 640px) {
+      body { padding: .5em; }
+      header { padding: .8em; }
+      h1 { font-size: 2rem; }
+
+      /* remove floats on small screens */
+      .float-right, .float-left { float: none; margin: 0 auto 1em; display: block; }
+      section.about p:first-letter { float: none; font-size: 2.2rem; }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Hidden Camino</h1>
-    <p class="tagline">Wandering Stories, Weathered Paths, Everyday Pilgrimage</p>
+    <p class="tagline">Wandering Stories, Weathered Paths, Cafe con Leche</p>
   </header>
-
+  
+  
   <main>
     <section class="about">
       <h2>Hidden Camino</h2>
