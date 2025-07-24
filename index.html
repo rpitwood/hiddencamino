@@ -4,36 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hidden Camino</title>
-  <meta name="description" content="Hidden Camino blends past and present on the Camino de Santiago. Join a crumpled linguist as we explore myth, history, and modern realities across the Galician landscape." />
+  <meta name="description" content="Hidden Camino explores the forgotten layers of the Camino de Santiago — sacred stones, lost tracks, and rural life in Galicia." />
 
   <!-- Fonts & favicon -->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Uncial+Antiqua&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="favicon.png" />
 
-  <!-- Base stylesheet -->
+  <!-- Base styling -->
   <style>
-    /* -------------  Root / body  ------------- */
     :root {
       --parchment-bg: #f7f2e4;
       --border: #a28b6d;
       --ink-dark: #2c1f0f;
     }
 
-    html {
+    *, *::before, *::after {
       box-sizing: border-box;
     }
-    *, *:before, *:after { box-sizing: inherit; }
 
     body {
       margin: 0;
+      padding: 1em;
       font-family: 'EB Garamond', serif;
       color: var(--ink-dark);
       background: var(--parchment-bg) url('images/parchment-texture.png') repeat;
       line-height: 1.6;
-      padding: 1em;
     }
 
-    /* -------------  Header  ------------- */
     header {
       text-align: center;
       font-family: 'Uncial Antiqua', cursive;
@@ -42,10 +39,10 @@
       border: 2px solid #4a3728;
       margin-bottom: 2em;
     }
+
     h1 { margin: 0 0 .2em; font-size: 2.5rem; }
     .tagline { font-style: italic; font-size: 1.1rem; color: #5e422e; }
 
-    /* -------------  Main container  ------------- */
     main {
       background: rgba(255, 255, 240, 0.95);
       padding: 2em;
@@ -54,28 +51,24 @@
       margin: auto;
     }
 
-    /* -------------  Typographic flair  ------------- */
-    section.about p:first-letter {
-      float: left;
-      font-size: 3rem;
-      line-height: 1;
-      padding-right: 0.15em;
+    h2 {
       font-family: 'Uncial Antiqua', cursive;
-      color: #6d4c3d;
+      font-size: 1.8rem;
+      margin-bottom: 1em;
     }
 
-    /* -------------  Images  ------------- */
-    img {
-      max-width: 100%;
-      height: auto;
-      border: 1px solid var(--border);
-      box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+    a {
+      color: #4a3728;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 1px solid #4a3728;
     }
-    /* floated illustrative images */
-    .float-right { float: right; margin: 0 0 1em 1em; }
-    .float-left  { float: left;  margin: 0 1em 1em 0; }
 
-    /* -------------  Footer  ------------- */
+    a:hover {
+      color: #2c1f0f;
+      border-color: #2c1f0f;
+    }
+
     footer {
       text-align: center;
       margin-top: 3em;
@@ -83,94 +76,29 @@
       color: #5e422e;
     }
 
-    /* -------------  Mobile tweaks  ------------- */
     @media (max-width: 640px) {
       body { padding: .5em; }
-      header { padding: .8em; }
       h1 { font-size: 2rem; }
-
-      /* remove floats on small screens */
-      .float-right, .float-left { float: none; margin: 0 auto 1em; display: block; }
-      section.about p:first-letter { float: none; font-size: 2.2rem; }
+      h2 { font-size: 1.5rem; }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Hidden Camino</h1>
-    <p class="tagline">Wandering Stories, Weathered Paths, Cafe con Leche</p>
+    <p class="tagline">Wandering Stories, Weathered Paths, Café con Leche</p>
   </header>
-  
-  
+
   <main>
-    <section class="about">
-      <h2>Hidden Camino</h2>
-      <p><em></em></p>
-      <p><img src="images/professor-pointing.png" alt="Professor pointing at a rock" style="float:right; max-width:200px; margin-left:1em;">You may spot me along the Camino de Santiago, Panama hat slightly askew, linen jacket crumpled from too many miles, muttering about Latin etymologies or Neolithic cairns. I’m a professional linguist with a background in modern and historical languages, now turned wanderer of ancient paths.</p>
-      <p>I walk the old roads of Galicia in search of forgotten stories and suspiciously shaped stones. Along the way, I share tales from prehistory to the present, tracing the echoes of lost dialects, medieval pilgrims, and Bronze Age builders, all with the air of a befuddled English archaeologist. Some say I got lost in a footnote sometime in the 1980s and never quite found my way out.</p>
-      <p>Welcome. Bring good boots and better questions.</p>
+    <section class="intro">
+      <h2>Welcome to Hidden Camino</h2>
+      <p><strong>Hidden Camino</strong> is a wandering project exploring the forgotten layers of the Camino de Santiago — sacred stones, lost tracks, and the slow rhythm of rural Galician life.</p>
 
-      <h3>Who’s that man in the hat?</h3>
-      <p><img src="images/professor-library.png" alt="Professor in cluttered library" style="float:left; max-width:200px; margin-right:1em;">I’m Richard - translator, linguist, professional word-wrangler, and full-time resident of rural Galicia. I live right on the Camino Francés, near kilometre 62, where the official route passes through land that’s been walked for thousands of years-long before Saint James made his appearance.</p>
-      <p>I moved here from England to restore an old farm and ended up digging through more than just the earth. The layers of this landscape go deep: Bronze Age tombs, Roman tracks, medieval legends, and the day-to-day rhythms of modern village life. Bin lorries, bureaucracies, and all.</p>
-      <p>I started offering these walks because people kept asking what it’s really like to live here - and because the stories I found were too good not to share.</p>
+      <p>We walk. We talk. We stop and notice. These aren’t tours — they’re quiet conversations with the land, shared between pilgrims and those who stayed behind.</p>
 
-      <h3>Are we nearly there yet?</h3>
-      <p><img src="images/professor-group.png" alt="Professor with group of pilgrims" style="float:right; max-width:200px; margin-left:1em;">Each walk is small-group, informal, and based on real lived experience: both mine and that of the thousands who came before us.</p>
-      <p>We meet at Taverna Casanova between km posts 61.628 and 61.504 at 9.30am for a 9.45 departure. We walk through woods and past battlefields, stopping to talk about everything from enchanted springs to septic tanks. Expect wildflowers, ruins, cows, and the occasional bit of light industry. We’ll explore forgotten churches, sunken lanes, and the bits the yellow arrows don’t show you.</p>
-      <p>It's 5½ miles from Casanova to Melide. We get to Melide in time for an early lunch by Spanish standards. You may continue on to Arzua, but most people seem to do Palas de Rei to Melide as a short day, so we can take our time on our walk.</p>
+      <p>Based near Palas de Rei and Melide, on the Camino Francés. Walks most mornings. Questions welcome.</p>
 
-      <h3>I’m hungry</h3>
-      <p>We meet at Terraza Casanova, which does an excellent breakfast. There are plenty of cafés on the way to Melide, where and when we stop is up to the group on the day. I can take you to my favourite pulpeira in Melide.</p>
-
-      <h3>Is that all?</h3>
-      <p>If you’ve a specific interest-language, mythology, stonework, land use, or local oddities-let’s put together something that suits. I’m also open to fireside chats or on-site storytelling at Fonte de Mouros.</p>
-
-      <h3>I need a wee</h3>
-      <p>Plenty of trees around.</p>
-
-      <h2>FAQ – Frequently Asked Questions</h2>
-      <dl>
-        <dt>Is this a religious tour?</dt>
-        <dd>No. But it is reverent in the old sense: we pay attention. I talk about the past and what’s happening now whether it’s a sacred stone or the price of petrol.</dd>
-
-        <dt>What will we talk about?</dt>
-        <dd>The Mouros. The Romans. Old place names. That church up there. Clearing brambles. Conveyancing. Where the bins go. What makes a land feel alive.</dd>
-
-        <dt>Is it in English?</dt>
-        <dd>Yes, with occasional Galician, Latin, and some well-placed swearing in Spanish. All lovingly explained. I don’t offer a bilingual tour, but I can chat in French, German or Spanish if required.</dd>
-
-        <dt>Can I bring my children or dog?</dt>
-        <dd>Yes, if they’re well-behaved and curious. I’ve nothing against the chaotic, but I’ll be talking a lot and wandering off into tangents.</dd>
-
-        <dt>Is this an official tour?</dt>
-        <dd>No. This is a wandering commentary, not a licenced guided tour. Bring boots, an open mind, and a notebook.</dd>
-
-        <dt>How much is it?</dt>
-        <dd>While the walk is offered freely, thoughtful travellers often insist on contributing. I won’t argue. You're welcome to donate what you feel it’s worth - whether in euros, pounds, wine, or second-hand books on medieval geology. If you’d like to make a donation, you can use <a href="https://revolut.me/rpitwood" target="_blank">Revolut</a> or just hand me something crumpled in person.</dd>
-      </dl>
-
-    
-    </section>
-
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>If you’d like to connect, ask about walks, or share your own wandering stories, feel free to message me. Message via WhatsApp (preferred) <a href="https://wa.me/34623516933">Message me on WhatsApp</a>. Please let me know you're coming. While there's strictly speaking no need to book, I won't turn up if I think no-one's coming.</p>
-      <form action="https://formspree.io/f/xyzpyeob" method="POST">
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" required><br />
-
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="_replyto" required><br />
-
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="5" required></textarea><br />
-
-        <button type="submit">Send</button>
-      </form>
-
-      <p>We’re also on Facebook at <a href="https://www.facebook.com/fontedemouros" target="_blank">Fonte de Mouros</a>, where you can follow our Camino life and projects. Also at <a href="https://www.fontedemouros.es" target="_blank">Fonte de Mouros</a></p>
-    
+      <p><a href="about.html">Read the full story →</a></p>
     </section>
   </main>
 
